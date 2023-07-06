@@ -24,10 +24,19 @@ HTML, JS, CSS, Node, Express, EJS, Mongo
 
 </br>
 
-## Mockup of UI
+## UI Mockup
 ---
-- ![Desktop View](http://imgur.com)
-- ![Mobile View](http://imgur.com)
+
+**Desktop View**
+![Desktop View](./images/wireframe1.png)
+![Desktop View](./images/wireframe2.png)
+![Desktop View](./images/wireframe3.png)
+
+</br>
+
+**Mobile View**
+![Mobile View](./images/wireframe4.png)
+![Mobile View](./images/wireframe5.png)
 
 </br>
 
