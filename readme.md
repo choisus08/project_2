@@ -6,7 +6,7 @@
 
 ## Description
 ---
-An application used to help a user log collected or gardened plants as well as track planting journey.
+An application used to track and organize a user's planting journey by logging basic plant information and scheduling their specific needs. 
 
 </br>
 
@@ -59,5 +59,5 @@ HTML, JS, CSS, Node, Express, EJS, Mongo
 ## ERD (Entity Relationship Diagram)
 ---
 ![PICTURE OF ERD](./images/erd.png)
-
-- [Free ERD Diagram Tool](https://dbdiagram.io/home)
+</br>
+[ERD Generator Link](https://lucid.app)
