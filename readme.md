@@ -58,6 +58,6 @@ HTML, JS, CSS, Node, Express, EJS, Mongo
 
 ## ERD (Entity Relationship Diagram)
 ---
-![PICTURE OF ERD](http://imgur.com)
+![PICTURE OF ERD](./images/erd.png)
 
 - [Free ERD Diagram Tool](https://dbdiagram.io/home)
