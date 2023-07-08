@@ -19,11 +19,14 @@ router.get('/plants/new', (req, res) => {
 });
 
 router.post('/plants', async (req, res) => {
-    if (req.body.variegation && req.body.rare === 'on') {
+    if(req.body.variegation === 'on') {
         req.body.variegation = true;
-        req.body.rare = true;
     }else {
         req.body.variegation = false;
+    }
+    if(req.body.rare === 'on') {
+        req.body.rare = true;
+    }else {
         req.body.rare = false;
     }
     await Plant.create(req.body);
@@ -46,11 +49,14 @@ router.get('/plants/:id/edit', async (req, res) => {
 });
 
 router.put('/plants/:id', async (req, res) => {
-    if(req.body.variegation && req.body.rare === 'on') {
+    if(req.body.variegation === 'on') {
         req.body.variegation = true;
-        req.body.rare = true;
     }else {
         req.body.variegation = false;
+    }
+    if(req.body.rare === 'on') {
+        req.body.rare = true;
+    }else {
         req.body.rare = false;
     }
     await Plant.findByIdAndUpdate(req.params.id, req.body)
