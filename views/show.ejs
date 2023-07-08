@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Tracker</title>
+    <%-include('./partials/files.ejs') %>
+</head>
+<body>
+    
+    <main class="container">
+        <div class="header">
+            <h1>Plant Log</h1>
+            <a class="home" href="/plants">Home</a>
+        </div>
+
+        <div class="profile">
+            <h1><%= plant.name%></h1>
+            <div class="data">
+                Date Acquired: <%= plant.dateAcquired %>
+                </br>
+                Watered: <%= plant.watered %>
+                </br>
+                Fertilized: <%= plant.fertilized %>
+                </br>
+                Variegation: <%= plant.variegation %>
+                </br>
+                Rare: <%= plant.rare %>
+                </br>
+                Notes: <%= plant.notes %>
+            </div>
+        </div>
+
+        <form class="delete" action="/plants/<%plant._id%>?_method=DELETE">
+            <input type="submit" value="Delete Log">
+        </form>
+    </main>
+
+</body>
+</html>

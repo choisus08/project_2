@@ -19,16 +19,21 @@ router.get('/plants/new', (req, res) => {
 });
 
 router.post('/plants', async (req, res) => {
-    if (req.body.variegation === 'on') {
+    if (req.body.variegation && req.body.rare === 'on') {
         req.body.variegation = true;
+        req.body.rare = true;
     }else {
         req.body.variegation = false;
+        req.body.rare = false;
     }
     await Plant.create(req.body);
     res.redirect('/plants')
 });
 
-
+router.get('/plants/:id', async (req, res) => {
+    const foundPlant = await Plant.findById(req.params.id);
+    res.render('show.ejs', {plant: foundPlant});
+});
 
 // export
 module.exports = router;
