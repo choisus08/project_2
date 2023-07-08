@@ -35,5 +35,10 @@ router.get('/plants/:id', async (req, res) => {
     res.render('show.ejs', {plant: foundPlant});
 });
 
+router.delete('/plants/:id', async (req, res) => {
+    await Plant.findByIdAndDelete(req.params.id);
+    res.redirect('/plants');
+});
+
 // export
 module.exports = router;

@@ -31,8 +31,8 @@
             </div>
         </div>
 
-        <form class="delete" action="/plants/<%plant._id%>?_method=DELETE">
-            <input type="submit" value="Delete Log">
+        <form class="delete" method="post" action="/plants/<%=plant._id%>?_method=DELETE">
+            <input class="delete" type="submit" value="Delete Log">
         </form>
     </main>
 
