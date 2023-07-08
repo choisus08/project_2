@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Tracker</title>
+    <%-include('./partials/files.ejs') %>
+</head>
+<body>
+    
+    <main class="container">
+        <div class="header">
+            <h1>Create Plant Log</h1>
+            <a href="/plants">Home</a>
+        </div>
+
+        <div class="form">
+            <form action="/plants" method="post">
+                Name: <input type="text" name="name" required />
+                </br>
+                Date Acquired: <input type="date" id="dateAcquired" name="dateAcquired" />
+                </br>
+                Watered: <input type="date" id="watered" name="watered" />
+                </br>
+                Fertilized: <input type="date" id="fertilized" name="fertilized" />
+                </br>
+                Variegation: <input type="checkbox" name="variegation" />
+                </br>
+                Rare: <input type="checkbox" name="rare" />
+                </br>
+                Notes: <input type="text" name="notes" />
+                </br>
+                <input type="submit" value="Add Plant">
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>

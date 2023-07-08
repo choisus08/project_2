@@ -14,7 +14,9 @@ router.get('/plants', async (req, res) => {
     res.render('index.ejs', {plants: allPlants})
 });
 
-
+router.get('/plants/new', (req, res) => {
+    res.render('new.ejs')
+});
 
 
 
