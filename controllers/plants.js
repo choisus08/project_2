@@ -40,5 +40,22 @@ router.delete('/plants/:id', async (req, res) => {
     res.redirect('/plants');
 });
 
+router.get('/plants/:id/edit', async (req, res) => {
+    const plant = await Plant.findById(req.params.id);
+    res.render('edit.ejs', {plant});
+});
+
+router.put('/plants/:id', async (req, res) => {
+    if(req.body.variegation && req.body.rare === 'on') {
+        req.body.variegation = true;
+        req.body.rare = true;
+    }else {
+        req.body.variegation = false;
+        req.body.rare = false;
+    }
+    await Plant.findByIdAndUpdate(req.params.id, req.body)
+    res.redirect('/plants')
+});
+
 // export
 module.exports = router;
