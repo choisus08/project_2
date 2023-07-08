@@ -18,7 +18,15 @@ router.get('/plants/new', (req, res) => {
     res.render('new.ejs')
 });
 
-
+router.post('/plants', async (req, res) => {
+    if (req.body.variegation === 'on') {
+        req.body.variegation = true;
+    }else {
+        req.body.variegation = false;
+    }
+    await Plant.create(req.body);
+    res.redirect('/plants')
+});
 
 
 

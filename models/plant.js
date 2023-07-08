@@ -5,9 +5,9 @@ const mongoose = require('./connection');
 // schema
 const plantSchema = new mongoose.Schema({
     name: String,
-    dateAcquired: Number,
-    watered: Number,
-    fertilized: Number,
+    dateAcquired: String,
+    watered: String,
+    fertilized: String,
     variegation: Boolean,
     rare: Boolean,
     notes: String
