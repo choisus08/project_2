@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Tracker</title>
+    <%- include ('./partials/files.ejs') %>
+</head>
+<body>
+    
+    <main>
+        <div class="container">
+            <h1>My Plants</h1>
+            <a href="/plants/new"><button class="add">Add Plant</button></a>
+
+            <ul>
+                <% plants.forEach(plant => { %>
+                    <li class="plant_list">
+                        <a href="/plants/<%=plant._id%>"><%=plant.name %></a>
+                    </li>
+                <% }) %>
+            </ul>
+        </div>
+    </main>
+
+</body>
+</html>
