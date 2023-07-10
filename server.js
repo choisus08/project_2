@@ -27,7 +27,7 @@ app.use(session({
     saveUninitialized: true,
     resave: false
 }));
-app.use('/plant', plantRouter);
+app.use('/plants', plantRouter);
 app.use('/user', userRouter);
 
 
