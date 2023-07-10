@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: rgb(187, 151, 125);
+    font-family: Quicksand;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home {
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(97, 140, 97);
+    color: white;
+    text-decoration: none;
+    padding: .5em;
+}
+
+.edit, .delete, .add {
+    border: none;
+    border-radius: 10px;
+    padding: .4em;
+    font-family: Quicksand;
+}
+
+.plant_list {
+    list-style: none;
+    
+}

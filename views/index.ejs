@@ -10,12 +10,12 @@
     
     <main>
         <div class="container">
-            <h1>Plant Tracker</h1>
-            <a class="home" href="/plants/new"><button>Add Plant</button></a>
+            <h1>My Plants</h1>
+            <a href="/plants/new"><button class="add">Add Plant</button></a>
 
             <ul>
                 <% plants.forEach(plant => { %>
-                    <li>
+                    <li class="plant_list">
                         <a href="/plants/<%=plant._id%>"><%=plant.name %></a>
                     </li>
                 <% }) %>
