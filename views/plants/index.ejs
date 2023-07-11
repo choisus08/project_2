@@ -10,16 +10,21 @@
     
     <main>
         <div class="container">
+            <p><%= user %></p>
+            <a href="/user/logout"><button>Logout</button></a>
             <h1>My Plants</h1>
-            <a href="/plants/new"><button class="add">Add Plant</button></a>
+            <a class="add" href="/plants/new">+ Plant</a>
 
             <ul>
                 <% plants.forEach(plant => { %>
-                    <li class="plant_list">
-                        <a href="/plants/<%=plant._id%>"><%=plant.name %></a>
+                    <li class="list">
+                        <a href="/plants/<%=plant._id %>">
+                        <%= plant.name %></a>
+                        <img src="../../public/images/leaf.png" alt="Leaf">
                     </li>
                 <% }) %>
             </ul>
+
         </div>
     </main>
 

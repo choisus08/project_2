@@ -2,7 +2,7 @@
 
 * {
     box-sizing: border-box;
-
+    margin: 0;
 }
 
 body {
@@ -16,7 +16,7 @@ body {
     align-items: center;
 }
 
-.home {
+.home, .add{
     border: none;
     border-radius: 15px;
     background-color: rgb(97, 140, 97);
@@ -25,14 +25,40 @@ body {
     padding: .5em;
 }
 
-.edit, .delete, .add {
+.edit, .delete {
     border: none;
     border-radius: 10px;
     padding: .4em;
     font-family: Quicksand;
 }
 
-.plant_list {
+.list {
     list-style: none;
     
+}
+
+
+.login_page {
+    background-image: url('./images/homepage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: center;
+
+}
+
+.login, .signup {
+    height: 8vh;
+    width: 10vw;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(117, 88, 66);
+    color: white;
+   
+
+}              
+
+.login_header {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
 }

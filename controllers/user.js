@@ -20,7 +20,7 @@ router.post('/signup', async (req, res) => {
 
 ///// login routes /////
 router.get('/login', (req, res) => {
-    res.render('users/login.ejs')
+    res.render('users/login.ejs');
 });
 
 router.post('/login', async (req, res) => {
@@ -33,7 +33,7 @@ router.post('/login', async (req, res) => {
         if(passMatches) {
             req.session.username = req.body.username;
             req.session.loggedIn = true;
-            res.redirect('/plant')
+            res.redirect('/plants')
         }else {
             res.send('incorrect password')
         }

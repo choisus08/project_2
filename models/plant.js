@@ -1,5 +1,4 @@
 // import connection file
-const { boolean } = require('webidl-conversions');
 const mongoose = require('./connection');
 
 // schema
@@ -10,7 +9,8 @@ const plantSchema = new mongoose.Schema({
     fertilized: String,
     variegation: Boolean,
     rare: Boolean,
-    notes: String
+    notes: String,
+    username: String
 });
 
 // pass model into db

@@ -28,15 +28,15 @@ HTML, JS, CSS, Node, Express, EJS, Mongo
 ---
 
 **Desktop View**
-![Desktop View](./images/wireframe1.png)
-![Desktop View](./images/wireframe2.png)
-![Desktop View](./images/wireframe3.png)
+![Desktop View](./public/images/wireframe1.png)
+![Desktop View](./public/images/wireframe2.png)
+![Desktop View](./public/images/wireframe3.png)
 
 </br>
 
 **Mobile View**
-![Mobile View](./images/wireframe4.png)
-![Mobile View](./images/wireframe5.png)
+![Mobile View](./public/images/wireframe4.png)
+![Mobile View](./public/images/wireframe5.png)
 
 </br>
 
@@ -58,6 +58,6 @@ HTML, JS, CSS, Node, Express, EJS, Mongo
 
 ## ERD (Entity Relationship Diagram)
 ---
-![PICTURE OF ERD](./images/erd.png)
+![PICTURE OF ERD](./public/images/erd.png)
 </br>
 [ERD Generator Link](https://lucid.app)
