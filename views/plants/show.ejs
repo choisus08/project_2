@@ -32,10 +32,12 @@
             </div>
         </div>
 
-        <a href="/plants/<%=plant._id%>/edit"><button class="edit">Edit</button></a>
-        <form class="delete" method="post" action="/plants/<%=plant._id%>?_method=DELETE">
-            <input class="delete" type="submit" value="Delete Log">
-        </form>
+        <div class="change_header">
+            <a class="edit_link" href="/plants/<%=plant._id%>/edit"><button class="edit">Edit</button></a>
+            <form class="delete" method="post" action="/plants/<%=plant._id%>?_method=DELETE">
+                <input class="delete" type="submit" value="Delete Log">
+            </form>
+        </div>
     </main>
 
 </body>

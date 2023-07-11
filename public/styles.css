@@ -59,41 +59,57 @@ body {
 
 .container {
    text-align: center;
-   padding: 2em
+   padding: 2em;
+   
 }
 
 .account_body, .list {
     display: grid;
     justify-content: center;
-    gap: .3em
+    gap: 1em
 }
 
 .account_body {
     padding: 2em;
+}
 
+ul {
+   padding: 0;
 }
 
 .list {
     list-style: none;
+    
 }
 
 .add {
     width: 12vw;
 }
 
-.profile, .form {
-    border: 1px solid black;
+.profile, .edit_form {
     border-radius: 20px;
     padding: 2em;
-    margin: 3em
+    margin: 3em 3em 2em 3em;
+    background-color: rgb(56, 74, 56);
 }
 
 .plant_name {
-    margin: 0 0 1em 0
+    margin: 0 0 .5em 0
+}
+
+.form {
+    display: grid;
+    
 }
 
 .data {
-    
+    display: grid;
+}
+
+.change_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .edit, .delete {
