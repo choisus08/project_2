@@ -10,21 +10,28 @@
     
     <main>
         <div class="container">
-            <p><%= user %></p>
-            <a href="/user/logout"><button>Logout</button></a>
-            <h1>My Plants</h1>
-            <a class="add" href="/plants/new">+ Plant</a>
+            <div class="account_header">
+                <p><img src="../../public/images/ginko.png" alt="Ginko" /> <%= user %></p>
+                <a href="/user/logout"><button>Logout</button></a>
+            </div>
+        
+            <div class="account_body">
+                <h1>My Plants</h1>
+                <a class="add" href="/plants/new">+ Plant</a>
+            </div>
 
-            <ul>
-                <% plants.forEach(plant => { %>
-                    <li class="list">
-                        <a href="/plants/<%=plant._id %>">
-                        <%= plant.name %></a>
-                        <img src="../../public/images/leaf.png" alt="Leaf">
-                    </li>
-                <% }) %>
-            </ul>
 
+            <div class="my_plants">
+                <ul>
+                    <% plants.forEach(plant => { %>
+                        <li class="list">
+                            <a href="/plants/<%=plant._id %>">
+                            <%= plant.name %></a>
+                            <img src="../../public/images/leaf.png" alt="Leaf" />
+                        </li>
+                    <% }) %>
+                </ul>
+            </div>
         </div>
     </main>
 
