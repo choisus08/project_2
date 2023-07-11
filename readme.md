@@ -58,6 +58,56 @@ HTML, JS, CSS, Node, Express, EJS, Mongo
 
 ## ERD (Entity Relationship Diagram)
 ---
-![PICTURE OF ERD](./public/images/erd.png)
-</br>
-[ERD Generator Link](https://lucid.app)
+
+``` mermaid
+erDiagram
+    USER {
+        string createUser
+        string login
+        string password
+    }
+    USER ||--o{ HOME : accountPage
+    HOME {
+        string name
+        string dateAcquired
+        string watered
+        string fertilized
+        boolean variegation
+        boolean rare
+        string notes
+    }
+    HOME ||--|{ CREATE : createPlant
+    CREATE {
+          string name
+        string dateAcquired
+        string watered
+        string fertilized
+        boolean variegation
+        boolean rare
+        string notes
+    }
+    HOME ||--|{ EDIT : editPlant
+    EDIT {
+          string name
+        string dateAcquired
+        string watered
+        string fertilized
+        boolean variegation
+        boolean rare
+        string notes
+    }
+    HOME ||--|{ DELETE : deletePlant
+    DELETE {
+          string name
+        string dateAcquired
+        string watered
+        string fertilized
+        boolean variegation
+        boolean rare
+        string notes
+    }
+    HOME ||--o{ LOGOUT : logoutUser
+    LOGOUT {
+        string LogoutMessage
+    }
+```

@@ -79,14 +79,20 @@ ul {
 
 .list {
     list-style: none;
-    
+}
+
+.plant_pic {
+    border-radius: 20px;
+    height: 20vh;
+    width: 20vw;
+   
 }
 
 .add {
     width: 12vw;
 }
 
-.profile, .edit_form {
+.profile, .edit_form, .new_form {
     border-radius: 20px;
     padding: 2em;
     margin: 3em 3em 2em 3em;
@@ -97,10 +103,6 @@ ul {
     margin: 0 0 .5em 0
 }
 
-.form {
-    display: grid;
-    
-}
 
 .data {
     display: grid;
