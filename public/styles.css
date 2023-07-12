@@ -61,7 +61,7 @@ body {
     justify-content: space-around;
 }
 
-.login_page {
+.signup_page, .login_page {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,18 +78,21 @@ body {
     height:250px;
     border-radius: 20px;
     border: none;
-    text-align: center;
-    
+    text-align: center; 
 }
  
-.user, .pw {
+.user, .pw{
     display: flex;
     gap: .3em;
     margin: 0 0 0 2.5em;
 }
 
 .user {
-    margin: 4em 0 0 2.5em
+    margin: 2em 0 0 2.5em
+}
+
+h3 {
+    margin: 1.4em 0 0 0 
 }
 
 .account_header {
@@ -101,7 +104,7 @@ body {
 .container {
    text-align: center;
    padding: 2em;
-   
+
 }
 
 .account_body, .list {
@@ -126,7 +129,6 @@ ul {
     border-radius: 20px;
     height: 20vh;
     width: 20vw;
-   
 }
 
 .add {
@@ -160,4 +162,10 @@ ul {
     border-radius: 10px;
     padding: .4em;
     font-family: Quicksand;
+}
+
+.logout {
+   border: none;
+   border-radius: 10px; 
+   padding: .5em
 }

@@ -6,16 +6,18 @@
     <title>Signup</title>
     <%- include ('../partials/files.ejs') %>
 </head>
-<body>
+<body class="signup_page">
     
-    <main>
+    <main class="signup_container">
         <div>
             <form action="/user/signup" method="POST">
-                <fieldset>
-                    <legend>New User</legend>
-                    <label>USERNAME: <input required type="text" name="username"></label>
-                    <label>PASSWORD: <input required type="password" name="password"></label>
-                    <input type="submit" value="Create Account" />
+                <fieldset class="login_form">
+                    <h3>New User</h3>
+                    <label class="user">Username: <input required type="text" name="username"></label>
+                </br>
+                    <label class="pw">Password: <input required type="password" name="password"></label>
+                </br>
+                    <input class="login" type="submit" value="Create Account" />
                 </fieldset>
             </form>
         </div>
