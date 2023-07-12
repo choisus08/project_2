@@ -27,28 +27,60 @@ body {
 }
 
 .start_page {
-    background-image: url('./images/homepage.png');
+    background-image: url('./images/monstera.png');
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
     background-color: center;
-
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
-.login, .signup {
-    height: 8vh;
-    width: 10vw;
+.app_name {
+    color: white;
+    text-align: center;
+    margin: 0 0 .5em 0
+    
+}           
+
+.login, .login2, .signup {
+    height: 4vh;
+    width: 9vw;
     border-radius: 15px;
     border: none;
     background-color: rgb(117, 88, 66);
     color: white;
+    font-family: Quicksand;
 
-}              
-
+}  
 
 .login_header {
     display: flex;
     justify-content: center;
     justify-content: space-around;
+}
+
+.login_page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+ 
+.user {
+    display: flex;
+    gap: .3em;
+    margin: 0 0 0 3.5em
+}
+
+.login2 {
+    margin: 0 0 0 10em
+}
+
+.login_form {
+    width:400px;
+    height:400px;
 }
 
 .account_header {

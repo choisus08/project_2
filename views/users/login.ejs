@@ -8,14 +8,15 @@
 </head>
 <body class="login_page">
     
-    <main>
+    <main class="login_container">
         <div>
-            <form action="/user/login" method="POST">
+            <form class="login_form" action="/user/login" method="POST">
                 <fieldset>
-                    <legend>User</legend>
-                    <label>USERNAME: <input required type="text" name="username"></label>
-                    <label>PASSWORD: <input required type="password" name="password"></label>
-                    <input type="submit" value="Login">
+                    <label class="user">Username: <input required type="text" name="username"></label>
+                </br>
+                    <label class="user">Password: <input required type="password" name="password"></label>
+                </br>
+                    <input class="login2" type="submit" value="Login">
                 </fieldset>
             </form>
         </div>
