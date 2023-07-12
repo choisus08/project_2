@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: rgb(187, 151, 125);
+    /* background-color: rgb(187, 151, 125); */
     font-family: Quicksand;
 }
 
@@ -69,7 +69,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-
 }
 
 .login_form {
@@ -95,10 +94,17 @@ h3 {
     margin: 1.4em 0 0 0 
 }
 
+.index_page {
+    background-image: url('./images/paradise.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
 .account_header {
     display: flex;
     justify-content: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .container {
