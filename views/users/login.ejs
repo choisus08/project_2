@@ -10,13 +10,13 @@
     
     <main class="login_container">
         <div>
-            <form class="login_form" action="/user/login" method="POST">
-                <fieldset>
+            <form action="/user/login" method="POST">
+                <fieldset class="login_form">
                     <label class="user">Username: <input required type="text" name="username"></label>
                 </br>
-                    <label class="user">Password: <input required type="password" name="password"></label>
+                    <label class="pw">Password: <input required type="password" name="password"></label>
                 </br>
-                    <input class="login2" type="submit" value="Login">
+                    <input class="login" type="submit" value="Login">
                 </fieldset>
             </form>
         </div>

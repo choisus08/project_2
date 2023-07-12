@@ -44,7 +44,7 @@ body {
     
 }           
 
-.login, .login2, .signup {
+.login, .signup {
     height: 4vh;
     width: 9vw;
     border-radius: 15px;
@@ -65,22 +65,31 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url('./images/vine.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 
-}
- 
-.user {
-    display: flex;
-    gap: .3em;
-    margin: 0 0 0 3.5em
-}
-
-.login2 {
-    margin: 0 0 0 10em
 }
 
 .login_form {
-    width:400px;
-    height:400px;
+    background-color: white;
+    width:350px;
+    height:250px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    
+}
+ 
+.user, .pw {
+    display: flex;
+    gap: .3em;
+    margin: 0 0 0 2.5em;
+}
+
+.user {
+    margin: 4em 0 0 2.5em
 }
 
 .account_header {
