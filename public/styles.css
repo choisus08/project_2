@@ -123,22 +123,27 @@ h3 {
     padding: 2em;
 }
 
-ul {
-   padding: 0;
+.img_grid {    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    list-style: none;
+    gap: 1em
 }
 
-.list {
-    list-style: none;
+.show_link {
+    text-decoration: none;
+    color: saddlebrown
+ 
 }
 
 .plant_pic {
     border-radius: 20px;
-    height: 20vh;
-    width: 20vw;
+    height: 250px;
+    width: 250px;
 }
 
 .add {
-    width: 12vw;
+    width: 90px;
 }
 
 .profile, .edit_form, .new_form {
@@ -174,4 +179,13 @@ ul {
    border: none;
    border-radius: 10px; 
    padding: .5em
+}
+
+@media screen and (max-width: 600px) {
+    .foundation {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+    }
+ 
 }

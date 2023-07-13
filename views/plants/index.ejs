@@ -21,14 +21,14 @@
                 
             </div>
 
-
             <div class="my_plants">
-                <ul>
+                <ul class="img_grid">
                     <% plants.forEach(plant => { %>
-                        <li class="list">
-                            <a href="/plants/<%=plant._id %>">
-                            <%= plant.name %></a>
-                            <img class="plant_pic" src="/images/leaf.png" alt="Leaf" />
+                        <li>
+                            <a class="show_link" href="/plants/<%=plant._id %>">
+                                <%= plant.name %> </br>
+                                <img class="plant_pic" src="/images/leaf.png" alt="Leaf" />
+                            </a>
                         </li>
                     <% }) %>
                 </ul>
