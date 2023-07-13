@@ -26,11 +26,14 @@ body {
     padding: .5em;
 }
 
-.start_page {
-    background-image: url('./images/monstera.png');
+.signup_page, .login_page, .index_page, .start_page, .show_page, .new_page, .edit_page{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+}
+
+.start_page {
+    background-image: url('./images/monstera.png');
     background-color: center;
     display: grid;
     justify-content: center;
@@ -66,9 +69,7 @@ body {
     align-items: center;
     justify-content: center;
     background-image: url('./images/vine.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+ 
 }
 
 .login_form {
@@ -96,9 +97,7 @@ h3 {
 
 .index_page {
     background-image: url('./images/paradise.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+
 }
 
 .account_header {
@@ -127,19 +126,20 @@ h3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     list-style: none;
-    gap: 1em
+    gap: 1em;
+    padding: 0
 }
 
 .show_link {
     text-decoration: none;
-    color: saddlebrown
- 
+    color: saddlebrown; 
 }
 
 .plant_pic {
     border-radius: 20px;
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
+    margin: .5em 0 0 0 
 }
 
 .add {
@@ -150,16 +150,27 @@ h3 {
     border-radius: 20px;
     padding: 2em;
     margin: 3em 3em 2em 3em;
-    background-color: rgb(56, 74, 56);
+    background-color: white;
 }
 
 .plant_name {
     margin: 0 0 .5em 0
 }
 
-
 .data {
     display: grid;
+}
+
+.show_page {
+    background-image: url('./images/olive.png');
+}
+
+.new_page{
+    background-image: url('./images/2pots.png');
+}
+
+.edit_page {
+    background-image: url('./images/wildflower.png');
 }
 
 .change_header {
