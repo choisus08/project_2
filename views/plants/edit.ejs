@@ -20,22 +20,28 @@
             <form class="form" action="/plants/<%=plant._id%>?_method=put" method="post">
                 Name: <input type="text" name="name" required />
                 </br>
-                Date Acquired: <input type="date" id="dateAcquired" name="dateAcquired" />
+                </br>
+                Acquired: <input type="date" id="dateAcquired" name="dateAcquired" />
+                </br>
                 </br>
                 Watered: <input type="date" id="watered" name="watered" />
                 </br>
+                </br>
                 Fertilized: <input type="date" id="fertilized" name="fertilized" />
+                </br>
                 </br>
                 Variegation: <input type="checkbox" name="variegation" />
                 </br>
+                </br>
                 Rare: <input type="checkbox" name="rare" />
                 </br>
+                </br>
                 Notes: <input type="text" name="notes" />
-            </br>
-            <input class="edit" type="submit" value="Save Changes" />
+                </br>
+                </br>
+                <input class="edit" type="submit" value="Save Changes" />
             </form>
         </div>
-
         
     </main>
 

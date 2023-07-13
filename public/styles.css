@@ -40,11 +40,26 @@ body {
     align-items: center;
 }
 
+.index_page {
+    background-image: url('./images/paradise.png');
+}
+
+.show_page {
+    background-image: url('./images/olive.png');
+}
+
+.new_page{
+    background-image: url('./images/2pots.png');
+}
+
+.edit_page {
+    background-image: url('./images/wildflower.png');
+}
+
 .app_name {
     color: white;
     text-align: center;
-    margin: 0 0 .5em 0
-    
+    margin: 0 0 .5em 0;
 }           
 
 .login, .signup {
@@ -55,7 +70,6 @@ body {
     background-color: rgb(117, 88, 66);
     color: white;
     font-family: Quicksand;
-
 }  
 
 .login_header {
@@ -69,7 +83,6 @@ body {
     align-items: center;
     justify-content: center;
     background-image: url('./images/vine.png');
- 
 }
 
 .login_form {
@@ -80,6 +93,7 @@ body {
     border: none;
     text-align: center; 
 }
+
  
 .user, .pw{
     display: flex;
@@ -95,11 +109,6 @@ h3 {
     margin: 1.4em 0 0 0 
 }
 
-.index_page {
-    background-image: url('./images/paradise.png');
-
-}
-
 .account_header {
     display: flex;
     justify-content: center;
@@ -109,7 +118,6 @@ h3 {
 .container {
    text-align: center;
    padding: 2em;
-
 }
 
 .account_body, .list {
@@ -140,7 +148,7 @@ h3 {
     border-radius: 20px;
     height: 200px;
     width: 200px;
-    margin: .5em 0 0 0 
+    margin: .5em 0 0 0; 
 }
 
 .add {
@@ -155,29 +163,17 @@ h3 {
 }
 
 .plant_name {
-    margin: 0 0 .5em 0
-}
-
-.data {
-    display: grid;
-}
-
-.show_page {
-    background-image: url('./images/olive.png');
-}
-
-.new_page{
-    background-image: url('./images/2pots.png');
-}
-
-.edit_page {
-    background-image: url('./images/wildflower.png');
+    margin: 0 0 .5em 0;
 }
 
 .change_header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.new_plant_header {
+    color: rgb(228, 228, 228);
 }
 
 .edit, .delete {
@@ -190,7 +186,13 @@ h3 {
 .logout {
    border: none;
    border-radius: 10px; 
-   padding: .5em
+   padding: .5em;
+}
+
+.add, .edit, .delete, .logout {
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 @media screen and (max-width: 600px) {

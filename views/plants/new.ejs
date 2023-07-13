@@ -10,7 +10,7 @@
     
     <main class="container">
         <div class="header">
-            <h1>New Plant Log</h1>
+            <h1 class="new_plant_header">New Plant Log</h1>
             <a class="home" href="/plants">Home</a>
         </div>
 
@@ -18,23 +18,29 @@
             <form class="form" action="/plants" method="post">
                 Name: <input type="text" name="name" required />
                 </br>
-                Date Acquired: <input type="date" id="dateAcquired" name="dateAcquired" />
+                </br>
+                Acquired: <input type="date" id="dateAcquired" name="dateAcquired" />
+                </br>
                 </br>
                 Watered: <input type="date" id="watered" name="watered" />
                 </br>
+                </br>
                 Fertilized: <input type="date" id="fertilized" name="fertilized" />
+                </br>
                 </br>
                 Variegation: <input type="checkbox" name="variegation" />
                 </br>
+                </br>
                 Rare: <input type="checkbox" name="rare" />
                 </br>
+                </br>
                 Notes: <input type="text" name="notes" />
-            </br>
-            <input class="add" type="submit" value="Add Plant" />
+                </br>
+                </br>
+                <input class="add" type="submit" value="+ Plant" />
             </form>
         </div>
-            
-        
+
     </main>
 
 </body>
