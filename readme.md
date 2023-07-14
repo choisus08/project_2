@@ -3,7 +3,7 @@
 
 </br>
 
-## Project Description
+## App Description
 ---
 An application used to track and organize a user's planting journey by logging basic plant information and scheduling their specific needs. 
 
@@ -31,7 +31,17 @@ An application used to track and organize a user's planting journey by logging b
 
 </br>
 
-## UI Mockup
+## Installation
+
+---
+
+- `Fork` and `clone` this repository
+- `cd` into the directory on your local machine
+- Open this repository in your code editor and run the code `npm run dev` to open the app in your browser
+
+</br>
+
+## Wireframe
 ---
 
 **Desktop View**
