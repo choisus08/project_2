@@ -210,6 +210,10 @@ h3 {
         background-position: -40vw;
     }
 
+    .new_page {
+        background-position: -30vw;
+    }
+
     .img_grid {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
