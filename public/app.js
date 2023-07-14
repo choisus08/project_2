@@ -15,7 +15,3 @@ deleteLog.addEventListener('submit', function(event) {
 function deletePlant() {
     deleteLog.submit();
 };
-
-// edit log 
-// keep current log info as placeholders before editing for better UI experience
-

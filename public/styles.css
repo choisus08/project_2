@@ -71,6 +71,16 @@ body {
     font-family: Quicksand;
 }  
 
+.create {
+    height: 35px;
+    width: 110px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(117, 88, 66);
+    color: white;
+    font-family: Quicksand;
+}
+
 .login_header {
     display: flex;
     justify-content: center;
@@ -121,12 +131,11 @@ h3 {
 .account_body, .list {
     display: grid;
     justify-content: center;
-    gap: 1em
+    gap: 1em;
 }
 
 .account_body {
     padding: 2em;
-
 }
 
 .img_grid {    
@@ -193,7 +202,7 @@ h3 {
    padding: .5em;
 }
 
-.add, .edit, .delete, .logout {
+.add, .edit, .delete, .logout{
     &:hover {
         cursor: pointer;
     }
@@ -236,5 +245,4 @@ h3 {
         background-attachment: fixed;
     }
 
- 
 }

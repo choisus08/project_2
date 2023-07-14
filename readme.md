@@ -19,7 +19,15 @@ An application used to track and organize a user's planting journey by logging b
 
 ## Technologies Used 
 ---
-HTML, JS, CSS, Node, Express, EJS, Mongo, jQuery, Google Fonts
+- HTML 
+- JS 
+- CSS 
+- Node 
+- Express 
+- EJS 
+- Mongo 
+- jQuery 
+- Google Fonts
 
 </br>
 
