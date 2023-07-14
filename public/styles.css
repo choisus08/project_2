@@ -26,7 +26,7 @@ body {
     padding: .5em;
 }
 
-.signup_page, .login_page, .index_page, .start_page, .show_page, .new_page, .edit_page{
+.signup_page, .login_page, .index_page, .start_page, .show_page, .new_page, .edit_page {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -34,7 +34,6 @@ body {
 
 .start_page {
     background-image: url('./images/monstera.png');
-    background-color: center;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -93,7 +92,6 @@ body {
     border: none;
     text-align: center; 
 }
-
  
 .user, .pw{
     display: flex;
@@ -102,11 +100,11 @@ body {
 }
 
 .user {
-    margin: 2em 0 0 2.5em
+    margin: 2em 0 0 2.5em;
 }
 
 h3 {
-    margin: 1.4em 0 0 0 
+    margin: 1.4em 0 0 0; 
 }
 
 .account_header {
@@ -128,6 +126,7 @@ h3 {
 
 .account_body {
     padding: 2em;
+
 }
 
 .img_grid {    
@@ -176,11 +175,16 @@ h3 {
     color: rgb(228, 228, 228);
 }
 
-.edit, .delete {
+.edit, .delete, .save_changes {
     border: none;
     border-radius: 10px;
     padding: .4em;
     font-family: Quicksand;
+}
+
+.save_changes {
+    background-color: rgb(175, 141, 120);
+    color: white;
 }
 
 .logout {
@@ -209,11 +213,24 @@ h3 {
     .img_grid {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
-        
+        overflow: auto;
     }
 
     .plant_pic {
         width: 130px;
         height: 130px;
     }
+
+    .new_form, .edit_form {
+        width: 300px;
+        height: auto;
+        margin: 3em 0 0 0;
+
+    }
+
+    .index_page {
+        background-attachment: fixed;
+    }
+
+ 
 }

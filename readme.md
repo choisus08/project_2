@@ -1,10 +1,9 @@
-# PROJECT 2
 # Plant Tracker 
 **By:** Susie Gordon
 
 </br>
 
-## Description
+## Project Description
 ---
 An application used to track and organize a user's planting journey by logging basic plant information and scheduling their specific needs. 
 
@@ -20,7 +19,7 @@ An application used to track and organize a user's planting journey by logging b
 
 ## Technologies Used 
 ---
-HTML, JS, CSS, Node, Express, EJS, Mongo
+HTML, JS, CSS, Node, Express, EJS, Mongo, jQuery, Google Fonts
 
 </br>
 
