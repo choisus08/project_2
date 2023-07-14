@@ -202,7 +202,7 @@ h3 {
    padding: .5em;
 }
 
-.add, .edit, .delete, .logout{
+.add, .edit, .delete, .logout, .login, .signup, .create{
     &:hover {
         cursor: pointer;
     }
